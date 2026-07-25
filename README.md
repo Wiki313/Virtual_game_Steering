@@ -1,50 +1,62 @@
-# VirtualSteering
-Project Title: Virtual Steering Control System Using Hand Gestures
-Description:
-This project presents an innovative and intuitive virtual steering system that allows users to control directional movement using hand gestures detected via a webcam. The system is developed using Python with OpenCV and MediaPipe for real-time hand tracking and gesture recognition.
+# 🎮 Virtual Game Steering
 
-How It Works:
-A webcam captures real-time video input.
+<p align="center">
+  <img src="assets/demo.gif" alt="Virtual Steering Demo" width="600"/>
+</p>
 
-MediaPipe's hand tracking model detects and tracks both hands, extracting key landmark positions such as the wrist and thumb tip.
+<p align="center">
+  <a href="https://github.com/Wiki313/Virtual_game_Steering/stargazers">
+    <img src="https://img.shields.io/github/stars/Wiki313/Virtual_game_Steering?style=social" alt="Stars"/>
+  </a>
+  <a href="https://github.com/Wiki313/Virtual_game_Steering/network/members">
+    <img src="https://img.shields.io/github/forks/Wiki313/Virtual_game_Steering?style=social" alt="Forks"/>
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.x-green.svg" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/MediaPipe-0.10+-orange.svg" alt="MediaPipe"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"/>
+</p>
 
-Based on the geometric positions and movements of the wrists and thumbs:
+> **Hands-free driving control using real-time hand gesture recognition.**
+>
+> Steer with wrist movement, accelerate with your right thumb, and brake with your left thumb — no physical controller needed!
 
-The system determines the direction (left, right, forward, or reverse).
+---
 
-Specific hand postures like a thumbs-up gesture are interpreted as acceleration (right hand) or braking (left hand).
+## ✨ Features
 
-Detected directions are mapped to keyboard keys (w, a, s, d) using the pynput library to simulate vehicle movement in a game or simulation.
+- 🖐️ **Hands-Free Steering** — Control direction using wrist movement
+- ⬆️ **Gesture Acceleration** — Right thumb up = accelerate (`W`)
+- ⬇️ **Gesture Braking** — Left thumb up = brake (`S`)
+- 🔄 **Real-Time Processing** — Smooth 30+ FPS performance with MediaPipe
+- 🎨 **Visual Feedback** — Live overlay showing current action on screen
+- 🎮 **Universal Compatibility** — Works with any game that uses `WASD` keys
+- ♿ **Accessibility Friendly** — Great alternative for users with mobility challenges
 
-Features:
-Hands-Free Driving Control: Users steer virtually using only hand movements.
+---
 
-Gesture-Based Acceleration and Braking: Right thumb = accelerate, left thumb = brake.
+## 📸 How It Works
 
-Direction Control: Lateral wrist movement calculates the turn angle and triggers left or right steering.
+| Gesture | Action | Key Pressed |
+|---------|--------|-------------|
+| Move wrists left | Turn Left | `A` |
+| Move wrists right | Turn Right | `D` |
+| Both hands centered | Keep Straight | `W` |
+| One hand only | Reverse | `S` |
+| Right thumb up | Accelerate | `W` |
+| Left thumb up | Brake | `S` |
 
-Live Feedback Overlay: Real-time instructions (e.g., "Turn Left", "Accelerate") are displayed on the video frame.
+---
 
-Applications:
-Driving simulators or educational tools.
+## 🚀 Installation
 
-Virtual reality or gaming input systems.
+### Prerequisites
+- Python 3.8 or higher
+- Webcam
 
-Accessibility tools for users with mobility challenges.
-
-Technologies Used:
-Python
-
-OpenCV – For video processing and visualization.
-
-MediaPipe – For real-time hand landmark detection.
-
-pynput – For simulating keyboard inputs.
-
-Requirements:
-Copy
-Edit
-opencv-python
-mediapipe
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/Wiki313/Virtual_game_Steering.git
+cd Virtual_game_Steering
 
 
