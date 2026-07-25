@@ -1,10 +1,6 @@
 # 🎮 Virtual Game Steering
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Virtual Steering Demo" width="600"/>
-</p>
-
-<p align="center">
   <a href="https://github.com/Wiki313/Virtual_game_Steering/stargazers">
     <img src="https://img.shields.io/github/stars/Wiki313/Virtual_game_Steering?style=social" alt="Stars"/>
   </a>
